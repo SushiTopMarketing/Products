@@ -4,12 +4,12 @@ pragma solidity ^0.8.0;
 
 import "./OpenzeppelinERC721.sol";
 
-contract sushininja1 is  ERC721URIStorage , ERC721Enumerable {
+contract sushininja2 is  ERC721URIStorage , ERC721Enumerable {
 
     address public owner;
     uint nftid = 1;
     
-    string currentURI = "https://arweave.net/BHgLoOk76jj9xaqHV-smswfm6EFzGqWAiyJogIL4aZk";
+    string currentURI = "https://arweave.net/-FiwE4qol15W_O305fXyJEW6owig9JZlw8mPLVa7izI";
     address airdropperaddress = 0x08Be0EB2345a54454FDD19ED5E01391914f721A1;
 
     event Mint();
@@ -72,7 +72,7 @@ contract sushininja1 is  ERC721URIStorage , ERC721Enumerable {
     }
 
 
-    constructor() ERC721("STS_sushininja_1" , "STSNINJ1" ) {
+    constructor() ERC721("STS_sushininja_2" , "STSNINJ2" ) {
         owner = airdropperaddress;
         
         }
