@@ -1,0 +1,31 @@
+.modal-open {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1;
+}
+  
+.question-icon {
+    width: 30px;
+    height: 30px;
+}
+
+#info{
+	display: none;
+}
+
+.modaal-container{
+    max-width: 600px;
+}
+
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}

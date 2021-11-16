@@ -1,0 +1,66 @@
+#ninja-box-1 {
+    position: absolute;
+    z-index: 100;
+    top: 25%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+}
+
+#ninja-box-2 {
+    position: absolute;
+    z-index: 1000;
+    bottom: 5%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; 
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flip-card-back {
+    background-color: white;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-back img {
+    width: 100%;
+    height: 100%;
+  }
